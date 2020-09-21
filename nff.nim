@@ -1,5 +1,21 @@
 import os
 import parseopt
+import strutils
+import system
+
+proc confirm_extension(conf_dir: string, file_name: string): string =
+  # get file_name's extension
+  var ext = file_name.split('.')[^1] # MARK let change
+  # generate the file path of the extention's config
+  var conf_path = conf_dir & "/templates/" & ext & ".conf" # MARK let change
+  if not existsFile(conf_path):
+    echo "Could not find file '", conf_path
+  else:
+    return conf_path
+
+proc copy_paste_conf(source_name: string, dest_name: string) =
+  var source_contents = readFile(source_name) # MARK let change
+  writeFile(dest_name, source_contents)
 
 var parser = initOptParser()
 if paramCount() != 1:
@@ -48,5 +64,11 @@ options:
 elif program_state.version_flag:
   echo "NimFormattedFile v0.0.0"
 elif program_state.output_file != "":
-  echo "output_file  = ", program_state.output_file
+  var conf_dir = case existsEnv("XDG_DATA_HOME") # MARK let change
+    of true: getEnv("XDG_DATA_HOME") & "/nff"
+    else: getEnv("HOME") & "/.config/nff"
+
+  var src = confirm_extension(conf_dir, program_state.output_file)
+  if src != "":
+    copy_paste_conf(src, program_state.output_file)
 
