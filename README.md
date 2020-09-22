@@ -62,17 +62,6 @@ cp templates ~/.config/nff
 ```
 Otherwise, if you have previously installed `nff`, the C++ or Nim version, copy any `.conf` files you may not have to your `templates` folder.
 
-## Uninstallation (?)
-
-1. Remove the `nff` executable.
-```bash
-rm /usr/local/bin/nff
-```
-2. Remove the `~/.config/nff` directory. BE WARNED: the command below is the fastest way, but it `f`orces `r`ecursive deletion, so use it at your own risk.
-```bash
-rm -rf ~/.config/nff
-```
-
 ## Roadmap
 
 See the [wiki](https://github.com/oliversandli/NimFormattedFile/wiki) for the roadmap.
