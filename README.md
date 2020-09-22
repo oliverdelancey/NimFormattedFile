@@ -12,24 +12,50 @@ This is a brand-new version of [NewFormattedFile](https://github.com/oliversandl
 
 Nim has become a very powerful, clean, and efficient language. It combines run-time speed with ease of development; I was able to write, from scratch, NimFormattedFile in one day, while NewFormattedFile took 3-4 days. Nim deserves to be used more widely-- and in an effort to further this cause, I have re-written NewFormattedFile in Nim, with an exciting roadmap of new features to come.
 
-## Installation
+## Getting Started
 
 NimFormattedFile works as a drop-in replacement to the old NewFormattedFile.
 
-Automated installation is in the works. For now, you can install it manually.
+### Prerequisites
 
-1. Download and install Nim. (The easiest way is to use [choosenim](https://github.com/dom96/choosenim#choosenim).)
-2. Clone this repo.
+- [Nim](https://nim-lang.org/)
+
+The easiest way to install Nim is to use [choosenim](https://github.com/dom96/choosenim#choosenim).
+
+### Installation
+
+1. Clone this repo.
 ```bash
 git clone https://github.com/oliversandli/NimFormattedFile.git
 ```
-3. Enter the directory, and compile `nff`.
+2. `cd` into the cloned directory and run `install.sh`.
+```bash
+cd nimformattedfile
+chmod +x install.sh  # IMPORTANT. Give the script executable permissions.
+./install.sh
+```
+
+### Uninstallation
+
+Run the provided uninstall script.
+```bash
+chmod +x uninstall.sh
+./uninstall.sh
+```
+
+### Build From Source
+
+1. Clone this repo.
+```bash
+git clone https://github.com/oliversandli/NimFormattedFile.git
+```
+2. Enter the directory, and compile `nff`.
 ```bash
 cd nimformattedfile
 nim c -d:release nff.nim
 ```
-4. Copy the executable to `/usr/local/bin`.
-5. If you have never installed any version of `nff` before, create the config directory in your default config directory (`$XDG_CONFIG_HOME` or `$HOME/.config`) and copy the `templates` folder there.
+3. Copy the executable to `/usr/local/bin`.
+4. If you have never installed any version of `nff` before, create the config directory in your default config directory (`$XDG_CONFIG_HOME` or `$HOME/.config`) and copy the `templates` folder there.
 ```bash
 mkdir ~/.config/nff
 cp templates ~/.config/nff
