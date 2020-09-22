@@ -47,3 +47,17 @@ rm /usr/local/bin/nff
 rm -rf ~/.config/nff
 ```
 
+## Roadmap
+
+See the [wiki](https://github.com/oliversandli/NimFormattedFile/wiki) for the roadmap.
+
+## License
+
+This project uses the [MIT License](https://github.com/oliversandli/NimFormattedFile/blob/master/LICENSE).
+
+## Contact
+
+Raise an Issue! I'll see you there.
+
+Project link: [https://github.com/oliversandli/NimFormattedFile](https://github.com/oliversandli/NimFormattedFile)
+
