@@ -60,9 +60,10 @@ if program_state.help_flag:
   echo """NimFormattedFile v0.0.0
 Create a new file designated by the input file extension.
 options:
-    -h --help  ask for help"""
+    -v --version  output current version
+    -h --help     ask for help"""
 elif program_state.version_flag:
-  echo "NimFormattedFile v0.0.0"
+  echo "NimFormattedFile v0.0.1"
 elif program_state.output_file != "":
   var conf_dir = case existsEnv("XDG_DATA_HOME") # MARK let change
     of true: getEnv("XDG_DATA_HOME") & "/nff"
