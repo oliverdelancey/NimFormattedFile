@@ -29,7 +29,7 @@ proc echo_usage() =
 
 proc echo_help() =
   echo_version()
-  echo "Create a new file designated by the input file extension."
+  echo "Create a new file designated by the input file's extension."
   echo_usage()
   echo """options:
     -v --version  output current version
