@@ -46,7 +46,7 @@ else
     echo "Creating config directory..."
     mkdir "$confpath"
     echo "Creating central config..."
-    cp central.yaml "$confpath"
+    cp central.conf "$confpath"
     echo "Creating templates directory..."
     cp -r templates "$confpath"
 fi
