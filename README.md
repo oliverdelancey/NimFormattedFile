@@ -58,6 +58,8 @@ Credit to othnieldrew's https://github.com/othneildrew/Best-README-Template for 
 
 ## About
 
+**Current version:** `0.0.2`.
+
 ### Description
 
 A brand-new version of [NewFormattedFile](https://github.com/oliversandli/NewFormattedFile), re-written in [Nim](https://nim-lang.org/).
