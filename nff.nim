@@ -25,15 +25,17 @@ proc echo_version() =
   echo "NimFormattedFile v" & version
 
 proc echo_usage() =
-  echo "usage: nff [options] output_file"
+  echo "Usage: nff <output_file>"
 
 proc echo_help() =
   echo_version()
   echo "Create a new file designated by the input file's extension."
+  echo ""
   echo_usage()
-  echo """options:
-    -v --version  output current version
-    -h --help     ask for help"""
+  echo ""
+  echo """Options:
+    -v --version  Print the current version.
+    -h --help     Print this help message."""
 
 # MAIN PROGRAM
 var parser = initOptParser()
