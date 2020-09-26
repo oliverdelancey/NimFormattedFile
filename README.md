@@ -118,7 +118,7 @@ nim c -d:release nff.nim
 mkdir ~/.config/nff
 cp templates ~/.config/nff
 ```
-Otherwise, if you have previously installed `nff`, the C++ or Nim version, copy any `.conf` files you may not have to your `templates` folder.
+Otherwise, if you have previously installed `nff`, the C++ or Nim version, copy any `.tmpl` files you may not have to your `templates` folder.
 
 ## Usage
 
