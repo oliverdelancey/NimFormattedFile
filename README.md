@@ -64,7 +64,7 @@ Credit to othnieldrew's https://github.com/othneildrew/Best-README-Template for 
 
 A brand-new version of [NewFormattedFile](https://github.com/oliversandli/NewFormattedFile), re-written in [Nim](https://nim-lang.org/).
 
-`nff` creates a new file with the format specified by its matching config file. For example, a file ending in `.py` will be created with the contents of `nff`'s `py.conf`. The `*.conf` files are simply plain text. You can create any `*.conf` files for any file types you like, as long as the config file's name matches the file extension of the target file type (`hpp.conf` for `*.hpp` files, etc.)
+`nff` creates a new file with the format specified by its matching config file. For example, a file ending in `.py` will be created with the contents of `nff`'s `py.tmpl`. The `*.tmpl` files are simply plain text. You can create any `*.tmpl` files for any file types you like, as long as the config file's name matches the file extension of the target file type (`hpp.tmpl` for `*.hpp` files, etc.)
 
 ### Why Nim?
 
