@@ -77,8 +77,9 @@ NimFormattedFile works as a drop-in replacement to the old NewFormattedFile.
 ### Prerequisites
 
 - [Nim](https://nim-lang.org/)
+- [`clapfn`](https://github.com/oliversandli/clapfn) A command line argument parser library.
 
-The easiest way to install Nim is to use [choosenim](https://github.com/dom96/choosenim#choosenim).
+The easiest way to install Nim is to use [choosenim](https://github.com/dom96/choosenim#choosenim). This will also install [nimble](https://github.com/nim-lang/nimble), which can be used to install clapfn (see clapfn's [Installation](https://github.com/oliversandli/clapfn#installation) instructions).
 
 ### Installation
 
