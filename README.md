@@ -109,7 +109,7 @@ git clone https://github.com/oliversandli/NimFormattedFile.git
 ```
 2. Enter the directory, and compile `nff`.
 ```bash
-cd nimformattedfile
+cd NimFormattedFile
 nim c -d:release nff.nim
 ```
 3. Copy the executable to `/usr/local/bin`.
