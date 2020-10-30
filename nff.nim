@@ -12,7 +12,7 @@ proc confirm_extension(conf_dir: string, file_name: string): string =
   var ext = file_name.split('.')[^1] # MARK let change
   # generate the file path of the extention's config
   var conf_path = conf_dir & "/templates/" & ext & ".tmpl" # MARK let change
-  if not existsFile(conf_path):
+  if not fileExists(conf_path):
     echo "Could not find file '", conf_path
   else:
     return conf_path
