@@ -58,7 +58,7 @@ Credit to othnieldrew's https://github.com/othneildrew/Best-README-Template for 
 
 ## About
 
-**Current version:** `0.0.2`.
+**Current version:** `0.0.3`.
 
 ### Description
 
