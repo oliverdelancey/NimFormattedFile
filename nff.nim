@@ -15,7 +15,7 @@ proc confirm_extension(conf_dir: string, file_name: string): string =
   # generate the file path of the extention's config
   var conf_path = conf_dir & "/templates/" & ext & ".tmpl" # TODO: let change
   if not fileExists(conf_path):
-    echo "Could not find file '", conf_path
+    echo "Could not find file '", conf_path, "'"
   else:
     return conf_path
 
