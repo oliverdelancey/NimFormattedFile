@@ -4,7 +4,7 @@ import strutils
 import system
 
 # GLOBAL VARIABLES
-let version = "0.0.2"
+let version = "0.0.3"
 
 # PROCEDURES
 proc confirm_extension(conf_dir: string, file_name: string): string =
