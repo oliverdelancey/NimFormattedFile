@@ -58,13 +58,13 @@ Credit to othnieldrew's https://github.com/othneildrew/Best-README-Template for 
 
 ## About
 
-**Current version:** `0.0.2`.
+**Current version:** `0.0.3`.
 
 ### Description
 
 A brand-new version of [NewFormattedFile](https://github.com/oliversandli/NewFormattedFile), re-written in [Nim](https://nim-lang.org/).
 
-`nff` creates a new file with the format specified by its matching config file. For example, a file ending in `.py` will be created with the contents of `nff`'s `py.conf`. The `*.conf` files are simply plain text. You can create any `*.conf` files for any file types you like, as long as the config file's name matches the file extension of the target file type (`hpp.conf` for `*.hpp` files, etc.)
+`nff` creates a new file with the format specified by its matching config file. For example, a file ending in `.py` will be created with the contents of `nff`'s `py.tmpl`. The `*.tmpl` files are simply plain text. You can create any `*.tmpl` files for any file types you like, as long as the config file's name matches the file extension of the target file type (`hpp.tmpl` for `*.hpp` files, etc.)
 
 ### Why Nim?
 
@@ -77,8 +77,9 @@ NimFormattedFile works as a drop-in replacement to the old NewFormattedFile.
 ### Prerequisites
 
 - [Nim](https://nim-lang.org/)
+- [`clapfn`](https://github.com/oliversandli/clapfn) A command line argument parser library.
 
-The easiest way to install Nim is to use [choosenim](https://github.com/dom96/choosenim#choosenim).
+The easiest way to install Nim is to use [choosenim](https://github.com/dom96/choosenim#choosenim). This will also install [nimble](https://github.com/nim-lang/nimble), which can be used to install clapfn (see clapfn's [Installation](https://github.com/oliversandli/clapfn#installation) instructions).
 
 ### Installation
 
@@ -109,7 +110,7 @@ git clone https://github.com/oliversandli/NimFormattedFile.git
 ```
 2. Enter the directory, and compile `nff`.
 ```bash
-cd nimformattedfile
+cd NimFormattedFile
 nim c -d:release nff.nim
 ```
 3. Copy the executable to `/usr/local/bin`.
