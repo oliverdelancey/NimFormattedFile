@@ -127,7 +127,9 @@ Just run `nff my_file.ext`. For example:
 ```bash
 nff awesome_program.cpp
 cat awesome_program.cpp
+```
 
+```cpp
 #include <iostream>
 
 int main(int argc, char** argv) {
@@ -136,7 +138,7 @@ int main(int argc, char** argv) {
 ```
 
 Run `nff --help` for complete help.
-```bash
+```
 NimFormattedFile v0.0.3
 Create a new file designated by the input file's extension.
 
