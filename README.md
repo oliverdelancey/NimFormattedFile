@@ -137,14 +137,17 @@ int main(int argc, char** argv) {
 
 Run `nff --help` for complete help.
 ```bash
-nff --help
-
-NimFormattedFile v0.0.1
+NimFormattedFile v0.0.3
 Create a new file designated by the input file's extension.
-usage: nff [options] output_file
-options:
-    -v --version  output current version
-    -h --help     ask for help
+
+Usage: nff [-h] [-v]  file
+
+Required arguments:
+    file           The file to create.
+
+Optional arguments:
+    -h, --help     Show this help message and exit.
+    -v, --version  Show version number and exit.
 ```
 
 ## Roadmap
