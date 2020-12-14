@@ -26,7 +26,7 @@ Credit to othnieldrew's https://github.com/othneildrew/Best-README-Template for 
         </a>
         <img src="https://img.shields.io/github/stars/oliversandli/NimFormattedFile?style=flat-square&logo=github" alt="Stars">
         <a href="https://github.com/oliversandli/NimFormattedFile/issues">
-            <img src="https://img.shields.io/github/issues/oliversandli/NimFormattedFile?style=flat-square&logo=github" alt="Issues">
+            <img src="https://img.shields.io/github/issues/oliversandli/nimformattedfile?logo=git&style=flat-square" alt="Issues">
         </a>
         <a href="https://github.com/oliversandli/NimFormattedFile/blob/master/LICENSE">
             <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square&logo=github" alt="License">
