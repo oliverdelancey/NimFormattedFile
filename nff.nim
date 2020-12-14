@@ -5,6 +5,7 @@ import tables
 
 import clapfn
 
+
 # GLOBAL VARIABLES
 let version = "0.0.3"
 
@@ -19,7 +20,7 @@ proc confirm_extension(conf_dir: string, file_name: string): string =
   else:
     return conf_path
 
-proc copy_paste_conf(source_name: string, dest_name: string) =
+proc copy_paste_template(source_name: string, dest_name: string) =
   var source_contents = readFile(source_name) # TODO: let change
   writeFile(dest_name, source_contents)
 
@@ -39,5 +40,5 @@ var conf_dir = case existsEnv("XDG_DATA_HOME") # TODO: let change
 
 var src = confirm_extension(conf_dir, output_file)
 if src != "":
-  copy_paste_conf(src, output_file)
+  copy_paste_template(src, output_file)
 
