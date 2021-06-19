@@ -1,0 +1,244 @@
+#+BEGIN_HTML
+  <!--
+  Credit to othnieldrew's https://github.com/othneildrew/Best-README-Template for formatting inspiration.
+  -->
+
+  <!-- PROJECT LOGO -->
+    <br />
+    <p align="center">
+        <a href="https://github.com/oliversandli/NimFormattedFile/wiki">
+            <img src="images/logo.png" alt="Logo" width="80" height="80">
+        </a>
+        <h3 align="center">NimFormattedFile</h3>
+        <p align="center">
+            Instantly create pre-formatted files.
+            <br />
+            <a href="https://github.com/oliversandli/NimFormattedFile/wiki"><strong>Wiki »</strong></a>
+            <br />
+            <br />
+            <a href="https://nim-lang.org/">
+                <img src="https://img.shields.io/badge/language-nim-yellow?style=flat-square&logo=nim" alt="Language">
+            </a>
+            <img src="https://img.shields.io/github/stars/oliversandli/NimFormattedFile?style=flat-square&logo=github" alt="Stars">
+            <a href="https://github.com/oliversandli/NimFormattedFile/issues">
+                <img src="https://img.shields.io/github/issues/oliversandli/nimformattedfile?logo=git&style=flat-square" alt="Issues">
+            </a>
+            <a href="https://github.com/oliversandli/NimFormattedFile/blob/master/LICENSE">
+                <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square&logo=github" alt="License">
+            </a>
+            <br />
+            <br />
+            <a href="https://github.com/oliversandli/NimFormattedFile#getting-started">Getting Started</a>
+            ·
+            <a href="https://github.com/oliversandli/NimFormattedFile/issues">Report Bug</a>
+            ·
+            <a href="https://github.com/oliversandli/NimFormattedFile/issues">Request Feature</a>
+        </p>
+    </p>
+#+END_HTML
+
+** Table of Contents
+   :PROPERTIES:
+   :CUSTOM_ID: table-of-contents
+   :END:
+
+- [[#about][About]]
+
+  - [[#description][Description]]
+  - [[#why-nim][Why Nim?]]
+
+- [[#getting-started][Getting Started]]
+
+  - [[#prerequisites][Prerequisites]]
+  - [[#installation][Installation]]
+  - [[#uninstallation][Uninstallation]]
+  - [[#build-from-source][Build From Source]]
+
+- [[#usage][Usage]]
+- [[#roadmap][Roadmap]]
+- [[#license][License]]
+- [[#contact][Contact]]
+
+** About
+   :PROPERTIES:
+   :CUSTOM_ID: about
+   :END:
+
+*Current version:* =0.0.3=.
+
+*** Description
+    :PROPERTIES:
+    :CUSTOM_ID: description
+    :END:
+
+A brand-new version of
+[[https://github.com/oliversandli/NewFormattedFile][NewFormattedFile]],
+re-written in [[https://nim-lang.org/][Nim]].
+
+=nff= creates a new file with the format specified by its matching
+config file. For example, a file ending in =.py= will be created with
+the contents of =nff='s =py.tmpl=. The =*.tmpl= files are simply plain
+text. You can create any =*.tmpl= files for any file types you like, as
+long as the config file's name matches the file extension of the target
+file type (=hpp.tmpl= for =*.hpp= files, etc.)
+
+*** Why Nim?
+    :PROPERTIES:
+    :CUSTOM_ID: why-nim
+    :END:
+
+Nim has become a very powerful, clean, and efficient language. It
+combines run-time speed with ease of development; I was able to write,
+from scratch, NimFormattedFile in one day, while NewFormattedFile took
+3-4 days. Nim deserves to be used more widely-- and in an effort to
+further this cause, I have re-written NewFormattedFile in Nim, with an
+exciting roadmap of new features to come.
+
+** Getting Started
+   :PROPERTIES:
+   :CUSTOM_ID: getting-started
+   :END:
+
+NimFormattedFile works as a drop-in replacement to the old
+NewFormattedFile.
+
+*** Prerequisites
+    :PROPERTIES:
+    :CUSTOM_ID: prerequisites
+    :END:
+
+- [[https://nim-lang.org/][Nim]]
+- [[https://github.com/oliversandli/clapfn][=clapfn=]] A command line
+  argument parser library.
+
+The easiest way to install Nim is to use
+[[https://github.com/dom96/choosenim#choosenim][choosenim]]. This will
+also install [[https://github.com/nim-lang/nimble][nimble]], which can
+be used to install clapfn (see clapfn's
+[[https://github.com/oliversandli/clapfn#installation][Installation]]
+instructions).
+
+*** Installation
+    :PROPERTIES:
+    :CUSTOM_ID: installation
+    :END:
+
+1. Clone this repo.
+
+#+BEGIN_SRC sh
+    git clone https://github.com/oliversandli/NimFormattedFile.git
+#+END_SRC
+
+2. =cd= into the cloned directory and run =install.sh=.
+
+#+BEGIN_SRC sh
+    cd nimformattedfile
+    chmod +x install.sh  # IMPORTANT. Give the script executable permissions.
+    ./install.sh
+#+END_SRC
+
+*** Uninstallation
+    :PROPERTIES:
+    :CUSTOM_ID: uninstallation
+    :END:
+
+Run the provided uninstall script.
+
+#+BEGIN_SRC sh
+    chmod +x uninstall.sh
+    ./uninstall.sh
+#+END_SRC
+
+*** Build From Source
+    :PROPERTIES:
+    :CUSTOM_ID: build-from-source
+    :END:
+
+1. Clone this repo.
+
+#+BEGIN_SRC sh
+    git clone https://github.com/oliversandli/NimFormattedFile.git
+#+END_SRC
+
+2. Enter the directory, and compile =nff=.
+
+#+BEGIN_SRC sh
+    cd NimFormattedFile
+    nim c -d:release nff.nim
+#+END_SRC
+
+3. Copy the executable to =/usr/local/bin=.
+4. If you have never installed any version of =nff= before, create the
+   config directory in your default config directory (=$XDG_CONFIG_HOME=
+   or =$HOME/.config=) and copy the =templates= folder there.
+
+#+BEGIN_SRC sh
+    mkdir ~/.config/nff
+    cp templates ~/.config/nff
+#+END_SRC
+
+Otherwise, if you have previously installed =nff=, the C++ or Nim
+version, copy any =.tmpl= files you may not have to your =templates=
+folder.
+
+** Usage
+   :PROPERTIES:
+   :CUSTOM_ID: usage
+   :END:
+
+Just run =nff my_file.ext=. For example:
+
+#+BEGIN_SRC sh
+    nff awesome_program.cpp
+    cat awesome_program.cpp
+#+END_SRC
+
+#+BEGIN_SRC C++
+    #include <iostream>
+
+    int main(int argc, char** argv) {
+        std::cout << "C++ file generated by nff" << std::endl;
+    }
+#+END_SRC
+
+Run =nff --help= for complete help.
+
+#+BEGIN_EXAMPLE
+    NimFormattedFile v0.0.3
+    Create a new file designated by the input file's extension.
+
+    Usage: nff [-h] [-v]  file
+
+    Required arguments:
+        file           The file to create.
+
+    Optional arguments:
+        -h, --help     Show this help message and exit.
+        -v, --version  Show version number and exit.
+#+END_EXAMPLE
+
+** Roadmap
+   :PROPERTIES:
+   :CUSTOM_ID: roadmap
+   :END:
+
+See the [[https://github.com/oliversandli/NimFormattedFile/wiki][wiki]]
+for the roadmap.
+
+** License
+   :PROPERTIES:
+   :CUSTOM_ID: license
+   :END:
+
+This project uses the
+[[https://github.com/oliversandli/NimFormattedFile/blob/master/LICENSE][MIT
+License]].
+
+** Contact
+   :PROPERTIES:
+   :CUSTOM_ID: contact
+   :END:
+
+Raise an Issue! I'll see you there.
+
+Project link: [[https://github.com/oliversandli/NimFormattedFile]]
