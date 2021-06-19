@@ -100,7 +100,7 @@ exciting roadmap of new features to come.
     :CUSTOM_ID: supported-file-types
     :END:
 
-=nff= has templates added daily. Raise an [[https://github.com/oliversandli/NimFormattedFile/issues][Issue]] if you would like support added for one or more file types.
+=nff= has templates added frequently. Raise an [[https://github.com/oliversandli/NimFormattedFile/issues][Issue]] if you would like support added for one or more file types.
 
 - C
 - C++
