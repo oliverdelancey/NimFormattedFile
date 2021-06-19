@@ -46,6 +46,7 @@
 
   - [[#description][Description]]
   - [[#why-nim][Why Nim?]]
+  - [[#supported-file-types][Supported File Types]]
 
 - [[#getting-started][Getting Started]]
 
