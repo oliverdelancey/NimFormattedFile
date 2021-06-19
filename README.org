@@ -123,7 +123,7 @@ NewFormattedFile.
     :END:
 
 - [[https://nim-lang.org/][Nim]]
-- [[https://github.com/oliversandli/clapfn][=clapfn=]] A command line
+- [[https://github.com/oliversandli/clapfn][clapfn]] A command line
   argument parser library.
 
 The easiest way to install Nim is to use
