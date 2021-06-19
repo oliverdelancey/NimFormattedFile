@@ -94,6 +94,20 @@ from scratch, NimFormattedFile in one day, while NewFormattedFile took
 further this cause, I have re-written NewFormattedFile in Nim, with an
 exciting roadmap of new features to come.
 
+*** Supported File Types
+    :PROPERTIES:
+    :CUSTOM_ID: supported-file-types
+    :END:
+
+=nff= has templates added daily. Raise an [[https://github.com/oliversandli/NimFormattedFile/issues][Issue]] if you would like support added for one or more file types.
+
+- C
+- C++
+- JavaScript
+- Python3
+- Ruby
+- Sh(ell)
+
 ** Getting Started
    :PROPERTIES:
    :CUSTOM_ID: getting-started
