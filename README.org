@@ -6,33 +6,33 @@
   <!-- PROJECT LOGO -->
     <br />
     <p align="center">
-        <a href="https://github.com/oliversandli/NimFormattedFile/wiki">
+        <a href="https://github.com/oliverdelancey/NimFormattedFile/wiki">
             <img src="images/logo.png" alt="Logo" width="80" height="80">
         </a>
         <h3 align="center">NimFormattedFile</h3>
         <p align="center">
             Instantly create pre-formatted files.
             <br />
-            <a href="https://github.com/oliversandli/NimFormattedFile/wiki"><strong>Wiki »</strong></a>
+            <a href="https://github.com/oliverdelancey/NimFormattedFile/wiki"><strong>Wiki »</strong></a>
             <br />
             <br />
             <a href="https://nim-lang.org/">
                 <img src="https://img.shields.io/badge/language-nim-yellow?style=flat-square&logo=nim" alt="Language">
             </a>
-            <img src="https://img.shields.io/github/stars/oliversandli/NimFormattedFile?style=flat-square&logo=github" alt="Stars">
-            <a href="https://github.com/oliversandli/NimFormattedFile/issues">
-                <img src="https://img.shields.io/github/issues/oliversandli/nimformattedfile?logo=git&style=flat-square" alt="Issues">
+            <img src="https://img.shields.io/github/stars/oliverdelancey/NimFormattedFile?style=flat-square&logo=github" alt="Stars">
+            <a href="https://github.com/oliverdelancey/NimFormattedFile/issues">
+                <img src="https://img.shields.io/github/issues/oliverdelancey/nimformattedfile?logo=git&style=flat-square" alt="Issues">
             </a>
-            <a href="https://github.com/oliversandli/NimFormattedFile/blob/master/LICENSE">
+            <a href="https://github.com/oliverdelancey/NimFormattedFile/blob/master/LICENSE">
                 <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square&logo=github" alt="License">
             </a>
             <br />
             <br />
-            <a href="https://github.com/oliversandli/NimFormattedFile#getting-started">Getting Started</a>
+            <a href="https://github.com/oliverdelancey/NimFormattedFile#getting-started">Getting Started</a>
             ·
-            <a href="https://github.com/oliversandli/NimFormattedFile/issues">Report Bug</a>
+            <a href="https://github.com/oliverdelancey/NimFormattedFile/issues">Report Bug</a>
             ·
-            <a href="https://github.com/oliversandli/NimFormattedFile/issues">Request Feature</a>
+            <a href="https://github.com/oliverdelancey/NimFormattedFile/issues">Request Feature</a>
         </p>
     </p>
 #+END_HTML
@@ -73,7 +73,7 @@
     :END:
 
 A brand-new version of
-[[https://github.com/oliversandli/NewFormattedFile][NewFormattedFile]],
+[[https://github.com/oliverdelancey/NewFormattedFile][NewFormattedFile]],
 re-written in [[https://nim-lang.org/][Nim]].
 
 =nff= creates a new file with the format specified by its matching
@@ -100,7 +100,7 @@ exciting roadmap of new features to come.
     :CUSTOM_ID: supported-file-types
     :END:
 
-=nff= has templates added frequently. Raise an [[https://github.com/oliversandli/NimFormattedFile/issues][Issue]] if you would like support added for one or more file types.
+=nff= has templates added frequently. Raise an [[https://github.com/oliverdelancey/NimFormattedFile/issues][Issue]] if you would like support added for one or more file types.
 
 - C
 - C++
@@ -123,14 +123,14 @@ NewFormattedFile.
     :END:
 
 - [[https://nim-lang.org/][Nim]]
-- [[https://github.com/oliversandli/clapfn][clapfn]] A command line
+- [[https://github.com/oliverdelancey/clapfn][clapfn]] A command line
   argument parser library.
 
 The easiest way to install Nim is to use
 [[https://github.com/dom96/choosenim#choosenim][choosenim]]. This will
 also install [[https://github.com/nim-lang/nimble][nimble]], which can
 be used to install clapfn (see clapfn's
-[[https://github.com/oliversandli/clapfn#installation][Installation]]
+[[https://github.com/oliverdelancey/clapfn#installation][Installation]]
 instructions).
 
 *** Installation
@@ -141,7 +141,7 @@ instructions).
 1. Clone this repo.
 
 #+BEGIN_SRC sh
-    git clone https://github.com/oliversandli/NimFormattedFile.git
+    git clone https://github.com/oliverdelancey/NimFormattedFile.git
 #+END_SRC
 
 2. =cd= into the cloned directory and run =install.sh=.
@@ -172,7 +172,7 @@ Run the provided uninstall script.
 1. Clone this repo.
 
 #+BEGIN_SRC sh
-    git clone https://github.com/oliversandli/NimFormattedFile.git
+    git clone https://github.com/oliverdelancey/NimFormattedFile.git
 #+END_SRC
 
 2. Enter the directory, and compile =nff=.
@@ -237,7 +237,7 @@ Run =nff --help= for complete help.
    :CUSTOM_ID: roadmap
    :END:
 
-See the [[https://github.com/oliversandli/NimFormattedFile/wiki][wiki]]
+See the [[https://github.com/oliverdelancey/NimFormattedFile/wiki][wiki]]
 for the roadmap.
 
 ** License
@@ -246,7 +246,7 @@ for the roadmap.
    :END:
 
 This project uses the
-[[https://github.com/oliversandli/NimFormattedFile/blob/master/LICENSE][MIT
+[[https://github.com/oliverdelancey/NimFormattedFile/blob/master/LICENSE][MIT
 License]].
 
 ** Contact
@@ -256,4 +256,4 @@ License]].
 
 Raise an Issue! I'll see you there.
 
-Project link: [[https://github.com/oliversandli/NimFormattedFile]]
+Project link: [[https://github.com/oliverdelancey/NimFormattedFile]]
